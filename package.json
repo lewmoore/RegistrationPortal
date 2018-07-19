@@ -1,0 +1,29 @@
+{
+  "name": "stickitprelaunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewmoore/RegistrationPortal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewmoore/RegistrationPortal/issues"
+  },
+  "homepage": "https://github.com/lewmoore/RegistrationPortal#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.4"
+  }
+}
