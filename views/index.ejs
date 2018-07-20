@@ -3,20 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Registration Portal</title>
+    <title>StickIT</title>
   </head>
   <body>
-    StickIt
+    <p> StickIT is a new subscription service that is coming soon...</p>
+    <div class="flex-container">
+      <div class="box">
 
-    <form action='/', method='POST'>
-      <label>First Name:</label>
-      <input type="text" name="firstname">
-      <label> Last Name:</label>
-      <input type="text" name="lastname">
-      <label>Email:</label>
-      <input type="text" name="email">
-      <input type='submit' value='Submit'>
-    </form>
+        <div class="flex-item" id="title">
+          <h2>TITLE</h2>
+        </div>
+
+        <div class="flex-item" id="text">
+          <p>Bacon ipsum dolor amet tail beef ribs pastrami corned beef, shankle turkey porchetta tenderloin andouille filet mignon pork loin. Pork belly pancetta frankfurter tenderloin pork loin. Prosciutto tenderloin shank short ribs, burgdoggen pastrami fatback alcatra buffalo ham hock sausage shankle. Cow t-bone chicken strip steak pork loin swine.</p>
+        </div>
+
+        <form class="form-box" action='/', method='POST'>
+          <div class="flex-item" id="name-input">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div class="flex-item" id="email-input">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter your email name">
+          </div>
+          <div class="flex-item" id="btn-submit">
+            <input type='submit' value='Submit'>
+          </div>
+        </form>
+
+      </div>
+    </div>
 
   </body>
 </html>
