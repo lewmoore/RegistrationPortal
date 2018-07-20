@@ -26,6 +26,9 @@ html, body {
 .form-box {
     width: auto;
     border: 1px solid blue;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    padding: 20px;
 }
 .flex-item {
     margin: auto;
