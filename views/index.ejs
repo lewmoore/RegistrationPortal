@@ -7,16 +7,25 @@
   </head>
   <body>
     StickIt
-
-    <form action='/', method='POST'>
-      <label>First Name:</label>
-      <input type="text" name="firstname">
-      <label> Last Name:</label>
-      <input type="text" name="lastname">
-      <label>Email:</label>
-      <input type="text" name="email">
-      <input type='submit' value='Submit'>
-    </form>
+    <div class="flex-container">
+      <form class="form-box" action='/', method='POST'>
+        <div class="flex-item" id="name-input">
+          <label>First Name:</label>
+          <input type="text" name="firstname">
+        </div>
+        <div class="flex-item" id="last-name-input">
+          <label> Last Name:</label>
+          <input type="text" name="lastname">
+        </div>
+        <div class="flex-item" id="email-input">
+          <label>Email:</label>
+          <input type="text" name="email">
+        </div>
+        <div class="flex-item" id="btn-submit">
+          <input type='submit' value='Submit'>
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>
