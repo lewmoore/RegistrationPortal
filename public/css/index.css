@@ -50,6 +50,12 @@ input {
   margin: 0.8em;
 }
 
+input:focus {
+  outline: none !important;
+  border:1px solid #4CAF50;
+  box-shadow: 0 0 10px
+}
+
 input[type=submit] {
     width: 40%;
     background-color: #4CAF50;
