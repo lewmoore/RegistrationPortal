@@ -4,7 +4,13 @@ html {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   color: #666;
-  background: #F6F6F6;
+}
+
+body {
+  background-image: url("/images/glenn-carstens-peters-203007-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html, body {
@@ -25,7 +31,6 @@ html, body {
 }
 .form-box {
     width: auto;
-    border: 1px solid blue;
     border-radius: 5px;
     background-color: #F6F6F6;
     padding: 20px;
