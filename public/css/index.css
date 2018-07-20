@@ -3,7 +3,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
-  color: #666;
+  color: white;
   background-image: url("/images/frederik-danko-667185-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -43,14 +43,25 @@ html, body {
     text-align: center;
     font-weight: bold;
 }
-input {
+input, textarea {
+  width: 100%;
+  /* width : 150px; */
+  margin: 0;
   padding: 0.8em;
   width: 30em;
   border-radius: 3px;
   margin: 0.8em;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+ -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
 }
 
-input:focus {
+textarea {
+  height: 100%;
+  vertical-align: middle;
+}
+
+input:focus, textarea:focus {
   outline: none !important;
   border:1px solid #4CAF50;
   box-shadow: 0 0 10px
