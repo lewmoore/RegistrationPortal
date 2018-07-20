@@ -25,7 +25,8 @@ app.post('/', (req, res) => {
  let userDetails = new UserDetails(req.body)
 
  userDetails.save().then(() => {
-   res.render('index')
+   res.render('index', { req: req })
+   console.log(req.method)
  }).catch(err => {
    res.status(400).send("Not Saved")
  })
