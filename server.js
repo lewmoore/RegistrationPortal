@@ -18,7 +18,7 @@ let UserDetails = require('./model/userDetails')
 app.listen(8080, () => console.log('Your on localhost 8080'))
 
 app.get('/',(req, res) => {
-  res.render('index')
+  res.render('index', { req: req })
 })
 
 app.post('/', (req, res) => {
