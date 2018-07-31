@@ -63,7 +63,7 @@ input:focus{
 }
 
 input[type=submit] {
-    width: 18%;
+    width: 20%;
     background-color: #4CAF50;
     color: white;
     padding: 14px;
