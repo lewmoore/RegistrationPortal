@@ -5,15 +5,12 @@ app.set("views", "views")
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use(express.static(__dirname + '/public'));
-
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost:27017/userDetails')
+let mongoconnection = require('./database.js')
+mongoose.connect(mongoconnection)
 let UserDetails = require('./model/userDetails')
-
-
 
 app.listen(8080, () => console.log('Your on localhost 8080'))
 
@@ -26,7 +23,6 @@ app.post('/', (req, res) => {
 
  userDetails.save().then(() => {
    res.render('index', { req: req })
-   console.log(req.method)
  }).catch(err => {
    res.status(400).send("Not Saved")
  })
