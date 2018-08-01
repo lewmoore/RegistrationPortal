@@ -9,6 +9,7 @@ app.use(express.static(__dirname + '/public'));
 require('dotenv').config();
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
+let port     = process.env.PORT || 8080;
 let mongouser = process.env.USERNAME
 let mongopass = process.env.PASSWORD
 mongoose.connect('mongodb://'+ mongouser +':'+ mongopass +'@ds127854.mlab.com:27854/stickit')
@@ -16,7 +17,7 @@ let UserDetails = require('./model/userDetails')
 
 
 
-app.listen(8080, () => console.log('Your on localhost 8080'))
+app.listen(port, () => console.log('Your on localhost 8080'))
 
 app.get('/',(req, res) => {
   res.render('index', { req: req })
