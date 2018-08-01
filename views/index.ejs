@@ -6,32 +6,34 @@
     <title>StickIT</title>
   </head>
   <body>
-    <p> StickIT is a new subscription service that is coming soon...</p>
     <div class="flex-container">
       <div class="box">
 
         <div class="flex-item" id="title">
-          <h2>TITLE</h2>
+          <h2>StickIT</h2>
         </div>
 
         <div class="flex-item" id="text">
-          <p>Bacon ipsum dolor amet tail beef ribs pastrami corned beef, shankle turkey porchetta tenderloin andouille filet mignon pork loin. Pork belly pancetta frankfurter tenderloin pork loin. Prosciutto tenderloin shank short ribs, burgdoggen pastrami fatback alcatra buffalo ham hock sausage shankle. Cow t-bone chicken strip steak pork loin swine.</p>
+          <p>StickIt is a sticker subscription service coming to you soon.</p>
+          <p> If you are interested in finding out more when we launch, register your interest below!</p>
         </div>
 
         <form class="form-box" action='/', method='POST'>
           <div class="flex-item" id="name-input">
-            <label>Name</label>
-            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="name" placeholder="Name">
           </div>
           <div class="flex-item" id="email-input">
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Enter your email name">
+            <input type="text" name="email" placeholder="Email">
           </div>
           <div class="flex-item" id="btn-submit">
-            <input type='submit' value='Submit'>
+            <input type='submit' value='Keep Me Updated'>
           </div>
         </form>
-
+        <div class="flex-item" id="text">
+        <% if (req.method == 'POST') { %>
+           <p> Thanks for registering! </p>
+          <% } %>
+        </div>
       </div>
     </div>
 
