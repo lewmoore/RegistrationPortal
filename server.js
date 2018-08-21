@@ -33,4 +33,8 @@ app.post('/', (req, res) => {
  })
 })
 
+app.get('/.well-known/acme-challenge/Zlduk7Kr5u-yoxEILNEPaXN1bEnH04k0qB0eIY_i1CI', (req, res) => {
+  app.render("Zlduk7Kr5u-yoxEILNEPaXN1bEnH04k0qB0eIY_i1CI.BxYkOGpewqdr1qn_KnBJh52EBHlAlYUYhBp7-OcT0V8")
+})
+
 module.exports = app
