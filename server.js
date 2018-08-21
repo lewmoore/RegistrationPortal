@@ -15,7 +15,9 @@ let mongopass = process.env.PASSWORD
 mongoose.connect('mongodb://'+ mongouser +':'+ mongopass +'@ds127854.mlab.com:27854/stickit')
 let UserDetails = require('./model/userDetails')
 
-
+var sslRedirect = require(‘heroku-ssl-redirect’);
+const app = express();
+app.use(sslRedirect());
 
 app.listen(port, () => console.log('Your on localhost 8080'))
 
