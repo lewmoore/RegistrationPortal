@@ -34,7 +34,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/.well-known/acme-challenge/jNk9aikmVaNsV5tmDjs2vRXYezyt4Oa0qQq-N1SfOh0', (req, res) => {
-  app.send("jNk9aikmVaNsV5tmDjs2vRXYezyt4Oa0qQq-N1SfOh0.BxYkOGpewqdr1qn_KnBJh52EBHlAlYUYhBp7-OcT0V8")
+  res.send("jNk9aikmVaNsV5tmDjs2vRXYezyt4Oa0qQq-N1SfOh0.BxYkOGpewqdr1qn_KnBJh52EBHlAlYUYhBp7-OcT0V8")
 })
 
 module.exports = app
