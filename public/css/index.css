@@ -5,6 +5,7 @@ html {
   line-height: 1.6;
   color: white;
   background-image: url("/images/sticker-bomb-laptop-pc.jpg");
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,6 +44,16 @@ html, body {
     line-height: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+.about-text {
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+  margin: 100px;
+  text-align: center;
+  font-weight: bold;
 }
 input{
   width: 100%;
