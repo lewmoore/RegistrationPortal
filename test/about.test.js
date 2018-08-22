@@ -5,13 +5,12 @@ const expect = chai.expect;
 const should = chai.should()
 chai.use(chaiHttp);
 
-describe('index page', function(){
-  it('should render welcome message', function(){
+describe('About Test', function(){
+  it('shouldnt error on load', function(){
     chai.request(server)
-    .get('/')
+    .get('/about')
     .end((req, res) => {
       res.should.have.status(200)
-      res.text.should.contain('StickerCrate')
     })
   })
 })
