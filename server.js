@@ -30,7 +30,7 @@ app.post('/', (req, res) => {
  userDetails.save().then(() => {
    res.render('index', { req: req })
  }).catch(err => {
-   res.status(400).send("Not Saved")
+   res.status(404).render('error')
  })
 })
 
